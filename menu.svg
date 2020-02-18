@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.5" height="19.5" viewBox="0 0 26.5 19.5">
+  <g id="コンポーネント_1_3" data-name="コンポーネント 1 – 3" transform="translate(0.75 0.75)">
+    <line id="線_1" data-name="線 1" x2="25" fill="none" stroke="#272525" stroke-linecap="round" stroke-width="1.5"/>
+    <line id="線_2" data-name="線 2" x2="25" transform="translate(0 9)" fill="none" stroke="#272525" stroke-linecap="round" stroke-width="1.5"/>
+    <line id="線_3" data-name="線 3" x2="25" transform="translate(0 18)" fill="none" stroke="#272525" stroke-linecap="round" stroke-width="1.5"/>
+  </g>
+</svg>
