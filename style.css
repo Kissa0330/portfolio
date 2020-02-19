@@ -2,15 +2,12 @@
 body{
   background-color: white;
   height: 100%;
-  margin: 0px;
-  padding: 0px;
 }
 /* ヘッダー */
 header {
   box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.15);
-  position: relative;
-  top: 0px;
-  left: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
   height: 80px;
   width: 100%;
 }
@@ -18,122 +15,115 @@ header {
   float: left;
   font-family: 'Noto Sans JP';
   font-size: 33px;
-  position: relative;
-  top: 16px;
-  left: 30px;
+  margin-top: 20.5px;
+  margin-left: 30px;
   color: #272525;
 }
 .menu{
   text-align: right;
-  position: relative;
-  top: 31.5px;
-  right: 44.5px;
+  padding-top: 29.7px;
+  margin-right: 44.5px;
 }
 
 
 
 /* 本体 */
 .profile{
-  position: relative;
   height: 100%;
   width: 100%;
-  top: 10px;
 }
 .Hello{
   font-size: 100px;
   font-family: 'Noto Sans JP';
-  position: relative;
-  top: 80px;
-  left: 92px;
+  margin-top: 80px;
+  margin-left: 92px;
   color: #272525;
 }
 .Face{
+  width: 100%;
+  height: 100%;
   float: right;
-  position: relative;
-  right: 150px;
-  bottom: 30px;
+  margin-right: 150px;
+  margin-top: -100px;
+  max-width: 411px;
+  min-width: 205.5px;
+  max-height: 411px;
+  min-width: 205.5px;
 }
 .Profession{
-  position: relative;
-  top: 100px;
-  left: 97px;
+  margin-top: 49px;
+  margin-left: 97px;
   font-size: 42px;
   font-family: 'YuGothic';
   font-weight: Medium;
   color: #272525;
 }
 .Self-intro{
-  position: relative;
-  top: 135px;
-  left: 99px;
+  margin-top: 39px;
+  margin-left: 99px;
   font-size: 25px;
   font-family: 'YuGothic';
   font-weight: Medium;
   color: #272525;
+  line-height: 43px;
   width: 640px;
 }
 
 /* コンタクトアイコン */
 .icons{
+  height: 43px;
   display: flex;
-  position: relative;
-  left: 84px;
-  top: 120px;
+  margin-left: 84px;
+  margin-top: -18px;
 
 }
 
 .arrow{
   text-align: center;
-  position: relative;
-  top: 90px;
+  margin-top: 125px;
+  margin-bottom: 76px;
   clear: both;
 }
 
-
+/* コンテンツ */
+.contents{
+  display: flex;
+  justify-content: space-around;
+}
+.content{
+  width: 100%;
+  height: 300px;
+  background-color: #272525;
+}
+.works{
+  font-family: 'Noto Sans JP';
+  font-size: 20px;
+  color: #272525;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+}
 
 /* フッター */
-.footer{
+footer{
   box-shadow: 0px -3px 5px 1px rgba(0, 0, 0, 0.15);
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
   height: 127px;
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: auto;
+  margin-top: 30px;
 }
 .footer_logo{
   font-family: 'Noto Sans JP';
   font-size: 20px;
-  position: relative;
-  top: 48px;
-  right: 15px;
+  margin-top: 53px;
+  margin-right: 15px;
   color: #272525;
-  margin: 0px;
-  padding: 0px;
 }
 .stick{
-  position: relative;
-  top: 36px;
+  margin-top: 36px;
 }
 .icon{
-  position: relative;
-  top: 42px;
-  left: 15.5px;
-}
-.icon1{
-  position: relative;
-  top: 42px;
-  left: 25px;
-}
-.icon2{
-  position: relative;
-  top: 42px;
-  left: 37.5px;
-}
-.icon3{
-  position: relative;
-  top: 42px;
-  left: 50px;
+  margin-top: 42px;
+  margin-left: 15.5px;
 }
