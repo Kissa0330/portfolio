@@ -13,9 +13,9 @@ header {
   width: 100%;
   z-index: 20;
   background-color: white;
+  display: flex;
 }
 .logo{
-  float: left;
   font-family: 'Noto Sans JP';
   font-size: 33px;
   margin-top: 20.5px;
@@ -23,35 +23,15 @@ header {
   color: #272525;
 }
 
-/* ハンバーガーメニュー */
-/* .stick1{
-  width: 25px;
-  margin-top: 25px;
-  margin-left: auto;
-}
-.stick2{
-  width: 25px;
-  position: relative;
-  text-align: right;
-  top: -7px;
-  margin-right: 44.5px;
-}
-.stick3{
-  width: 25px;
-  position: relative;
-  text-align: right;
-  top: -14px;
-  margin-right: 44.5px;
-} */
-
 .hamburger {
-  text-align: center;
-  margin-right: auto;
-  margin-top: 0px;
-  width: 40px; /* クリックしやすいようにちゃんと幅を指定する */
-  height: 40px; /* クリックしやすいようにちゃんと高さを指定する */
+  background-color: black;
+  margin-right: 40px;
+  margin-top: 27px;
+  width: 30px; 
+  height: 28px;
   cursor: pointer;
   z-index: 300;
+  margin-left:auto ;
 }
 
 
