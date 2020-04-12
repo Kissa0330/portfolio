@@ -3,6 +3,9 @@ body{
   background-color: white;
   height: 100%;
 }
+.wrap {
+  overflow: hidden;
+}
 /* ヘッダー */
 header {
   position: fixed;
@@ -24,17 +27,62 @@ header {
 }
 
 .hamburger {
-  background-color: black;
   margin-right: 40px;
   margin-top: 27px;
+  margin-left:auto ;
   width: 30px; 
   height: 28px;
   cursor: pointer;
   z-index: 300;
-  margin-left:auto ;
+}
+.nav-open .hamburger{
+  background-color: pink;
 }
 
+.stick{
+  position: absolute;
+  left: 11px;
+  width: 30px;
+  height: 1.7px;
+  background-color: #272525;
+}
+.stick_1{
+  top: 28px;
+  right: 40px;
+  left: auto;
+}
+.stick_2{
+  width: 29.5px;
+  top: 38px;
+  right: 40.5px;
+  left: auto;
+}
+.stick_3{
+  top: 48px;
+  right: 40px;
+  left: auto;
 
+}
+
+/* ハンバーガーメニューアニメーション用 */
+.black-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .6s;
+  cursor: pointer;
+}
+
+.nav-open .black-bg {
+  opacity: .8;
+  visibility: visible;
+}
 
 /* 本体 */
 .profile{
@@ -133,7 +181,7 @@ footer{
   margin-right: 15px;
   color: #272525;
 }
-.stick{
+.stick_footer{
   margin-top: 36px;
 }
 .icon{
