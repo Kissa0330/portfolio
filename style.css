@@ -35,10 +35,6 @@ header {
   cursor: pointer;
   z-index: 300;
 }
-.nav-open .hamburger{
-  background-color: pink;
-}
-
 .stick{
   position: absolute;
   left: 11px;
@@ -50,21 +46,24 @@ header {
   top: 28px;
   right: 40px;
   left: auto;
+  transition: all 0.7s;
 }
 .stick_2{
   width: 29.5px;
   top: 38px;
   right: 40.5px;
   left: auto;
+  transition: all 0.5s;
 }
 .stick_3{
   top: 48px;
   right: 40px;
   left: auto;
+  transition: all 0.7s;
 
 }
 
-/* ハンバーガーメニューアニメーション用 */
+/* グローバルナビ*/
 .black-bg {
   position: fixed;
   left: 0;
@@ -75,14 +74,66 @@ header {
   background-color: #000;
   opacity: 0;
   visibility: hidden;
-  transition: all .6s;
+  transition: all 1s;
   cursor: pointer;
 }
 
+.global-nav {
+  position: fixed;
+  right: -1170px; 
+  top: 0;
+  width: 768px; 
+  height: 100vh;
+  padding-top: 40px;
+  background-color: #272525;
+  transition: all 6s;
+  z-index: 200;
+  overflow-y: auto; 
+}
+.global-nav__list {
+  margin: 0;
+  list-style: none;
+  padding-top: 100px;
+}
+.global-nav__item {
+  text-align: left;
+  padding-left: 100px;
+  padding-top: 50px;
+}
+.global-nav__item a {
+  font-family: 'Noto Sans JP';
+  font-size: 100px;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+/* nav-open付与後のcss */
+.nav-open .global-nav {
+  right: 0;
+}
+.nav-open .stick {
+  background-color: white;
+}
 .nav-open .black-bg {
   opacity: .8;
   visibility: visible;
 }
+/* 棒のアニメーション */
+.nav-open .stick_1 {
+  transform: rotate(45deg);
+  top: 30px;
+  margin-top: 10px;
+}
+.nav-open .stick_2 {
+  width: 0;
+  transform: rotate(45deg);
+}
+.nav-open .stick_3 {
+  transform: rotate(-45deg);
+  top: 30px;
+  margin-top: 10px;
+}
+
 
 /* 本体 */
 .profile{
@@ -90,7 +141,6 @@ header {
   height: 100%;
   width: 100%;
   padding-top: 160px;
-  z-index: 10;
 }
 .Hello{
   font-size: 100px;
