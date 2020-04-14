@@ -11,3 +11,14 @@ function toggleNav() {
   });
 }
 toggleNav();
+
+
+function mouseOver(){
+  var content = document.getElementById("js-content");
+  var body = document.body;
+
+  content.addEventListener('click', function(){
+    body.classList.toggle('mouse-over');
+  });
+}
+mouseOver()
