@@ -29,7 +29,7 @@ header {
 .hamburger {
   margin-right: 40px;
   margin-top: 27px;
-  margin-left:auto ;
+  margin-left: auto;
   width: 30px; 
   height: 28px;
   cursor: pointer;
@@ -262,10 +262,8 @@ header {
   margin-top: 35px;
 }
 /* 画像にマウスオーバーした際のcss */
-.content .mouse-over{
+.mouse-over.content {
   background-color: pink;
-  width: 500px;
-  height: 3000px;
 }
 
 /* フッター */
