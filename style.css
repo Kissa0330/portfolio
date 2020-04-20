@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:900|Roboto:500,700&display=swap&subset=japanese');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700,900|Noto+Sans:400,400i,700,700i|Roboto:100,300,400,500,700,900&display=swap&subset=japanese');
 body{
   background-color: white;
   height: 100%;
@@ -14,13 +14,14 @@ header {
   margin-left: 0px;
   height: 80px;
   width: 100%;
-  z-index: 20;
+  z-index: 900;
   background-color: white;
   display: flex;
   justify-content: space-between;
 }
 .logo{
   font-family: 'Noto Sans JP';
+  font-weight: 900;
   font-size: 33px;
   margin-top: 20.5px;
   margin-left: 30px;
@@ -104,6 +105,7 @@ header {
 .global-nav__item a {
   font-family: 'Noto Sans JP';
   font-size: 100px;
+  font-weight: 900;
   display: block;
   text-decoration: none;
   color: white;
@@ -156,6 +158,7 @@ header {
 .Hello{
   font-size: 100px;
   font-family: 'Noto Sans JP';
+  font-weight: 900;
   margin-top: 0px;
   margin-left: 92px;
   color: #272525;
@@ -243,51 +246,131 @@ header {
 
 /* コンテンツ */
 .contents_1 {
-  padding-top: 120px;
+  padding-top: 80px;
 }
 .contents{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+.content{
+  position: relative;
+  width : calc(100% / 3) ;
+  height : 320px;
+}
 .content img{
-  width: 400px;
-  height: 300px;
+    width : 100%;
+  height : 320px;
   object-fit: cover;
+  position: absolute;
 }
 .overview{
   background-color: white;
   width: 250px;
-  height: 150px;
-  margin-top: 75px;
-  margin-right: 75px;
-  margin-left: 75px;
+  height: 160px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
   opacity: 0;
   transition: all 1s;
   z-index: 300;
   position: absolute;
 }
-.overview p{
-  top: 10px;
-  font-size: 20px;
-  font-family: 'YuGothic';
-  font-weight: Medium;
+.overview h1{
+  margin-top: 45px;
+  font-size: 26px;
+  font-family: 'Noto Sans JP';
+  font-weight: 700;
+  letter-spacing: 0.08em;
   color: #272525;
   text-align: center;
 }
-.works{
+.overview p{
+  font-size: 15px;
+  font-family: 'Roboto';
+  margin-top: 25px;
+  color: #272525;
+  opacity: 0.8;
+  text-align: center;
+}
+.view_wrapper{
+  text-align: center;
+}
+.viewmore{
   font-family: 'Noto Sans JP';
   font-size: 20px;
+  font-weight: 700;
   color: #272525;
   text-decoration: none;
-  display: block;
-  text-align: center;
+  display: inline-block;
   margin-top: 35px;
+  margin-bottom: 45px;
+  position: relative;
+}
+.viewmore::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #333;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform .3s;
+}
+.viewmore:hover::after {
+  transform: scale(1, 1);
 }
 /* 画像にマウスオーバーした際のcss */
 .mouse-over .overview{
   opacity: 1;
   visibility: visible;
+}
+
+/* 詳細ページのcss */
+.title{
+  font-family: 'Noto Sans JP';
+  font-size: 33px;
+  font-weight: 900;
+  color: #272525;
+  letter-spacing: 0.07em;
+  margin-top: 110px;
+  text-align: center;
+  text-decoration: underline;
+}
+.subtitle{
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  margin-top: 14px;
+  color: #272525;
+  opacity: 0.8;
+  text-align: center;
+}
+.main_graphic{
+  width: 700px;
+  height: 400px;
+  object-fit: cover;
+  margin-top: 18px;
+  margin-bottom: 20px;
+}
+.img_wrapper{
+  text-align: center;
+}
+.work_intro{
+font-family: 'YuGothic';
+font-weight: Medium;
+line-height: 30px;
+text-align: center;
+font-size: 18px;
+color: #272525;
+width: 650px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 30px;
 }
 
 /* フッター */
@@ -297,11 +380,11 @@ footer{
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 45px;
 }
 .footer_logo{
   font-family: 'Noto Sans JP';
   font-size: 20px;
+  font-weight: 900;
   margin-top: 53px;
   margin-right: 15px;
   color: #272525;
