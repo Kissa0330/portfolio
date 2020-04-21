@@ -148,7 +148,7 @@ header {
 }
 
 
-/* 本体 */
+/* TOP */
 .profile{
   position: relative;
   height: 100%;
@@ -160,23 +160,19 @@ header {
   font-family: 'Noto Sans JP';
   font-weight: 900;
   margin-top: 0px;
-  margin-left: 92px;
+  margin-left: 115px;
   color: #272525;
 }
 .Face{
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   float: right;
-  margin-right: 150px;
+  margin-right: 129px;
   margin-top: -95px;
-  max-width: 411px;
-  min-width: 205.5px;
-  max-height: 411px;
-  min-width: 205.5px;
 }
 .Profession{
   margin-top: 49px;
-  margin-left: 97px;
+  margin-left: 120px;
   font-size: 42px;
   font-family: 'YuGothic';
   font-weight: Medium;
@@ -184,7 +180,7 @@ header {
 }
 .Self-intro{
   margin-top: 39px;
-  margin-left: 99px;
+  margin-left: 120px;
   font-size: 25px;
   font-family: 'YuGothic';
   font-weight: Medium;
@@ -197,7 +193,7 @@ header {
 .icons{
   height: 43px;
   display: flex;
-  margin-left: 84px;
+  margin-left: 100px;
   margin-top: -18px;
 }
 .icon_1{
@@ -259,7 +255,7 @@ header {
   height : 320px;
 }
 .content img{
-    width : 100%;
+  width : 100%;
   height : 320px;
   object-fit: cover;
   position: absolute;
@@ -279,7 +275,7 @@ header {
   position: absolute;
 }
 .overview h1{
-  margin-top: 45px;
+  margin-top: 40px;
   font-size: 26px;
   font-family: 'Noto Sans JP';
   font-weight: 700;
@@ -288,7 +284,7 @@ header {
   text-align: center;
 }
 .overview p{
-  font-size: 15px;
+  font-size: 18px;
   font-family: 'Roboto';
   margin-top: 25px;
   color: #272525;
@@ -353,17 +349,17 @@ header {
 .main_graphic{
   width: 700px;
   height: 400px;
-  object-fit: cover;
-  margin-top: 18px;
-  margin-bottom: 20px;
+  object-fit: contain;
 }
 .img_wrapper{
+  margin-top: 18px;
+  margin-bottom: 10px;
   text-align: center;
 }
 .work_intro{
 font-family: 'YuGothic';
 font-weight: Medium;
-line-height: 30px;
+line-height: 33px;
 text-align: center;
 font-size: 18px;
 color: #272525;
@@ -371,6 +367,9 @@ width: 650px;
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 30px;
+}
+.class_document{
+  color: #272525;
 }
 
 /* フッター */
@@ -380,6 +379,7 @@ footer{
   width: 100%;
   display: flex;
   justify-content: center;
+  z-index: 3000;
 }
 .footer_logo{
   font-family: 'Noto Sans JP';
@@ -396,3 +396,321 @@ footer{
   margin-top: 42px;
   margin-left: 15.5px;
 }
+/* タブレットのcss */
+@media screen and (max-width:1160px){
+  .profile{
+    padding-top: 160px;
+  }
+  .Hello{
+    font-size: 80px;
+    margin-top: 0px;
+    margin-left: 92px;
+    color: #272525;
+  }
+  .Face{
+    margin-right: 50px;
+    margin-top: -65px;
+  }
+  .Face img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+  }
+  .Profession{
+    margin-top: 49px;
+    margin-left: 97px;
+    font-size: 30px;
+    color: #272525;
+  }
+  .Self-intro{
+    margin-top: 39px;
+    margin-left: 99px;
+    font-size: 20px;
+    color: #272525;
+    line-height: 43px;
+    width: 640px;
+  }
+  
+  /* コンタクトアイコン */
+  .icons{
+    margin-left: 84px;
+    margin-top: -18px;
+  }
+  .arrow{
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 106px;
+    clear: both;
+  }
+  .overview{
+    background-color: white;
+    width: 200px;
+    height: 110px;
+  }
+  .content{
+    height : 280px;
+  }
+  .content img{
+    height : 280px;
+  }
+  .overview h1{
+    margin-top: 37px;
+    font-size: 18px;
+  }
+  .overview p{
+    font-size: 10px;
+    margin-top: 10px;
+  }
+  .viewmore{
+    font-size: 17px;
+    margin-top: 28px;
+    margin-bottom: 38px;
+  }
+  /* 詳細ページ */
+  .title{
+    font-size: 30px;
+    letter-spacing: 0.07em;
+    margin-top: 110px;
+  }
+  .subtitle{
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 14px;
+  }
+  .main_graphic{
+    width: 600px;
+    height: 350px;
+    margin-top: 18px;
+    margin-bottom: 20px;
+  }
+  .work_intro{
+  line-height: 30px;
+  font-size: 18px;
+  width: 580px;
+  margin-bottom: 30px;
+  }
+  }
+  /* スマホのcss */
+  @media screen and (max-width:768px){
+    /* ヘッダー */
+    .logo{
+      font-size: 24px;
+      margin-top: 26px;
+      margin-left: 30px;
+    }
+    .hamburger {
+      margin-right: 38px;
+      margin-top: 27px;
+      width: 30px; 
+      height: 28px;
+    }
+    .stick{
+      position: absolute;
+      left: 11px;
+      width: 28px;
+      height: 1.7px;
+    }
+    .stick_1{
+      top: 28px;
+      right: 38px;
+      left: auto;
+      transition: all 0.7s;
+    }
+    .stick_2{
+      top: 38px;
+      right: 38px;
+      left: auto;
+      transition: all 0.5s;
+    }
+    .stick_3{
+      top: 48px;
+      right: 38px;
+      left: auto;
+      transition: all 0.7s;
+    }
+    /* グローバルナビ */
+    .black-bg {
+      left: 0;
+      top: 0;
+      opacity: 0;
+    }
+    .global-nav {
+      right: -1170px; 
+      top: 0;
+      width: 375px; 
+      height: 100vh;
+      padding-top: 40px;
+    }
+    .global-nav__list {
+      margin: 0;
+      padding-top: 100px;
+    }
+    .global-nav__item {
+      padding-left: 43px;
+      padding-top: 30px;
+    }
+    .global-nav__item a {
+      font-size: 70px;
+      display: block;
+      text-decoration: none;
+      color: white;
+    }
+    .current_location a {
+      color: #FFE67C;
+    }
+    /* 棒のアニメーション */
+    .nav-open .stick_1 {
+      transform: rotate(45deg);
+      top: 30px;
+      margin-top: 10px;
+    }
+    .nav-open .stick_2 {
+      width: 0;
+      transform: rotate(45deg);
+    }
+    .nav-open .stick_3 {
+      transform: rotate(-45deg);
+      top: 30px;
+      margin-top: 10px;
+    }
+    /* body */
+    .profile{
+      padding-top: 90px;
+    }
+    .Hello{
+      height: 0px;
+      text-align: center;
+      font-size: 67px;
+      letter-spacing: 0.06em;
+      margin-top: 0px;
+      margin-left: 10px;
+      color: #272525;
+      visibility: hidden;
+    }
+    .Face{
+      margin-right: 0px;
+      margin-left: 0px;
+      margin-top: 20px;
+      float: none;
+      text-align: center;
+    }
+    .Face img{
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+    }
+    .Profession{
+      margin-top: 20px;
+      margin-left: 0px;
+      font-size: 25px;
+      text-align: center;
+      color: #272525;
+    }
+    .Self-intro{
+      margin-top: 22px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 15px;
+      text-align: center;
+      line-height: 25px;
+      width: 88%;
+    }
+    
+    /* コンタクトアイコン */
+    .icons{
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 45px;
+      width: 209.5px;
+    }
+    .profile .icon{
+        margin-top: 0px;
+        margin-left: 15.5px;
+    }
+    .profile .icon img{
+      width: 33px;
+      height: 33px;
+    }
+    .arrow{
+      text-align: center;
+      margin-top: 80px;
+      margin-bottom: 106px;
+      clear: both;
+    }
+    .overview{
+      background-color: white;
+      width: 200px;
+      height: 110px;
+    }
+    .content{
+      height : 280px;
+      width : 100%;
+    }
+    .content img{
+      height : 280px;
+    }
+    .overview h1{
+      margin-top: 37px;
+      font-size: 18px;
+    }
+    .overview p{
+      font-size: 10px;
+      margin-top: 10px;
+    }
+    .viewmore{
+      font-size: 17px;
+      margin-top: 28px;
+      margin-bottom: 38px;
+    }
+    /* 詳細ページ */
+    .title{
+      font-size: 25px;
+      letter-spacing: 0.08em;
+      margin-top: 105px;
+    }
+    .subtitle{
+      font-size: 15px;
+      font-weight: 400;
+      margin-top: 10px;
+    }
+    .main_graphic{
+      width: 80%;
+      margin-top: 18px;
+      margin-bottom: 15px;
+    }
+    .work_intro{
+      line-height: 18px;
+      font-size: 12px;
+      width: 80%;
+      margin-bottom: 70px;
+    }
+    /* フッター */
+  footer{
+    height: 88px;
+    width: 100%;
+  }
+  .footer_logo{
+    font-size: 17px;
+    margin-top: 32px;
+    margin-right: 15px;
+  }
+  .stick_footer{
+    margin-top: 21px;
+  }
+  .stick_footer img{
+    height: 45px;
+    width: 2px;
+    object-fit: fill;
+  }
+  footer .icon{
+    width: 33px;
+    height: 36px;
+    margin-top: 28.4px;
+    margin-left: 8px;
+  }
+  footer .icon img{
+    width: 28px;
+    height: 28px;
+  }
+    }
+    
